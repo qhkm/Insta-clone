@@ -64,7 +64,7 @@ export default class HomeTab extends Component {
 
            <View style={{height:100}}>
             <View style={{flex:1, flexDirection:'row', justifyContent:'space-between', alignItems:'center', paddingHorizontal: 7}}>
-              <Text style={{fontWeight:'bold'}}>Stories</Text>
+              <Text style={{fontWeight:'bold'}}>Stories Lah sangat</Text>
             </View>
 
             <View style={{flex:1}}>
