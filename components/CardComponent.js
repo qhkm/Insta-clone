@@ -22,6 +22,7 @@ export default class CardComponent extends Component {
                 </Body>
             </Left>
         </CardItem>
+        
         <CardItem cardBody>
             <Image source={images[this.props.imageSource]} style={{height: 200, width:null, flex:1}}/>
         </CardItem>

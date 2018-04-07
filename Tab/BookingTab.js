@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import {  View, Text, StyleSheet } from 'react-native';
-import {Icon} from 'native-base'
+import {  View, Text, StyleSheet, TouchableHighlight, ScrollView} from 'react-native';
+import {Icon, Button, CardItem} from 'native-base'
+import SwiperIntro from '../components/SwiperIntro';
+import BasicFlatList from '../components/BasicFlatList'
+
+
+
 
 export default class BookingTab extends Component {
 
@@ -10,11 +15,14 @@ export default class BookingTab extends Component {
     )
   }
 
+
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text> textInBooking </Text>
-      </View>
+      <ScrollView>
+          <SwiperIntro/>
+          <BasicFlatList/>
+      </ScrollView>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {  View, Text, StyleSheet } from 'react-native';
-import {Icon} from 'native-base'
+import {Icon} from 'native-base';
+import BasicFlatList from '../components/BasicFlatList';
 
 export default class NotificationTab extends Component {
 
@@ -12,19 +13,10 @@ export default class NotificationTab extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text> textInNotification </Text>
-      </View>
+  
+        <BasicFlatList/>
+      
     );
   }
 }
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#F5FCFF'
-    }
-
-    });
