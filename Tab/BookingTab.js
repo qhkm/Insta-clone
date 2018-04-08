@@ -4,6 +4,7 @@ import {Icon, Button, CardItem} from 'native-base'
 import SwiperIntro from '../components/SwiperIntro';
 import BasicFlatList from '../components/BasicFlatList';
 import HomeScreenIconSection from './screens/HomeScreenIconSection';
+import Recommendation from '../components/Recommendation';
 
 
 
@@ -25,6 +26,7 @@ export default class BookingTab extends Component {
             <View>
             <HomeScreenIconSection/>
           </View>
+          <Recommendation/>
           <BasicFlatList/>
       </ScrollView>
     );
