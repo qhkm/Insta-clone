@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {  View, Text, StyleSheet, TouchableHighlight, ScrollView} from 'react-native';
 import {Icon, Button, CardItem} from 'native-base'
 import SwiperIntro from '../components/SwiperIntro';
-import BasicFlatList from '../components/BasicFlatList'
+import BasicFlatList from '../components/BasicFlatList';
+import HomeScreenIconSection from './screens/HomeScreenIconSection';
 
 
 
@@ -11,7 +12,7 @@ export default class BookingTab extends Component {
 
   static navigationOptions = {
     tabBarIcon: ({tintColor}) => (
-      <Icon name="ios-briefcase-outline" style= {{color: tintColor}} />
+      <Icon name="ios-home-outline" style= {{color: tintColor}} />
     )
   }
 
@@ -21,6 +22,9 @@ export default class BookingTab extends Component {
     return (
       <ScrollView>
           <SwiperIntro/>
+            <View>
+            <HomeScreenIconSection/>
+          </View>
           <BasicFlatList/>
       </ScrollView>
     );

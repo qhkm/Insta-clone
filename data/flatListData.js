@@ -3,45 +3,52 @@
 const flatListData = [
     {
         "key": "598a678278fee204ee51cd2c",
-        "name": "Cream Tea",   
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Cornish_cream_tea_2.jpg",                    
-        "foodDescription": "This is a cup of cream tea"
+        "name": "Package Jepun",   
+        "imageUrl": "https://dimg04.c-ctrip.com/images/300v0q000000gge9d42A0_C_500_280.jpg",                    
+        "foodDescription": "Package ini membawakan anda ke jepun",
+        "price": "RM2500"
     },
     {
         "key": "598a684f78fee204ee51cd2f",
-        "name": "Fresh mushroom",        
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Lactarius_indigo_48568.jpg",    
-        "foodDescription": "Fresh mushroom with vegetables. This is a long line, this is a long line, this is a long line,this is a long line,this is a long line"
+        "name": "Package Korea",        
+        "imageUrl": "https://dimg03.c-ctrip.com/images/fd/tg/g1/M04/7E/2D/CghzfVWw6hOAOiVNAAnMjRQx8bw742_C_228_132.jpg",    
+        "foodDescription": "Fresh mushroom with vegetables.",
+        "price": "RM2500"
     },
     {
         "key": "598a687678fee204ee51cd30",
-        "name": "Japanese Oyster",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Oysters_served_on_ice%2C_with_lemon_and_parsley.jpg",
-        "foodDescription": "Oysters with ice rock"
+        "name": "Package Europe",
+        "imageUrl": "https://dimg03.c-ctrip.com/images/fd/tg/g2/M05/8B/0F/Cghzf1Ww3IKARxIXADZynUNPueQ233_C_500_280.jpg",
+        "foodDescription": "Oysters with ice rock",
+        "price": "RM2500"
     },
     {
         "key": "598a680178fee204ee51cd2e",
-        "name": "Korean Kimchi",        
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Yeolmukimchi_3.jpg",
-        "foodDescription": "Traditional Korean Food"
+        "name": "Package Dalam Negara",        
+        "imageUrl": "https://dimg04.c-ctrip.com/images/300v0n000000ebv4hE47B_C_500_280.jpg",
+        "foodDescription": "Traditional Korean Food",
+        "price": "RM2500"
     },
     {
         "key": "598a688878fee204ee51cd31",
-        "name": "Multiple salad",     
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Salad_platter.jpg",   
-        "foodDescription": "Salad mixed with mushroom"
+        "name": "Package Sabah",     
+        "imageUrl": "https://dimg03.c-ctrip.com/images/100f04000000093keA9E8_C_500_280.jpg",   
+        "foodDescription": "Salad mixed with mushroom",
+        "price": "RM2500"
     },
     {
         "key": "598a68b778fee204ee51cd32",
-        "name": "Vegetable",   
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Vegetable_Cart_in_Guntur.jpg",     
-        "foodDescription": "Fresh vegetables"
+        "name": "Package Serawak",   
+        "imageUrl": "https://dimg04.c-ctrip.com/images/300f0a0000004nu7i82BA_C_500_280.jpg",     
+        "foodDescription": "Fresh vegetables",
+        "price": "RM2500"
     },
     {
         "key": "598a67c478fee204ee51cd2d",
-        "name": "traditional japanese salad",  
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Simple_somen.jpg",      
-        "foodDescription": "Very delicious Japanese Salad"
+        "name": "Package China",  
+        "imageUrl": "https://dimg04.c-ctrip.com/images/300v0q000000gj5ri5148_C_500_280.png",      
+        "foodDescription": "Very delicious Japanese Salad",
+        "price": "RM2500"
     }
 ];
 

@@ -4,29 +4,27 @@ import flatListData from '../data/flatListData';
 
 class FlatListItem extends Component {
 
-    _onPressAdd () {
-        alert('You pressed!!!');
-    }
-
-    render() {          
+    render() {     
+        
         return (
           <View style={{
             flex: 1,
             flexDirection: 'column',
             borderColor: '#ddd',
-            borderBottomWidth: 1           
+            borderBottomWidth: 0.5           
       }}>
             <View style={{
                 flex: 1,
                 flexDirection: 'row',
                 backgroundColor: 'white'            
           }}>  
-              <TouchableHighlight onPress={this._onPressAdd}>      
+              <TouchableHighlight>      
               <Image source={{uri: this.props.item.imageUrl}} style={{width:100, height:100, margin: 5}}></Image>
               </TouchableHighlight>
               <View style={{flex:1, flexDirection:'column'}}>
-                <Text style={styles.flatListItem}>{this.props.item.name}</Text>
-                <Text style={styles.flatListItem}>{this.props.item.foodDescription}</Text>
+                <Text style={styles.flatListItemTitle}>{this.props.item.name}</Text>
+                <Text style={styles.flatListItemDesc}>{this.props.item.foodDescription}</Text>
+                <Text style={styles.flatListItemPrice}>{this.props.item.price}</Text>
               </View>  
             </View>
           </View>  
@@ -35,11 +33,23 @@ class FlatListItem extends Component {
     }
 }
 const styles = StyleSheet.create({
-    flatListItem: {
+    flatListItemTitle: {
         color: 'black',
         padding: 10,
-        fontSize: 12,  
+        fontSize: 13, 
+        fontWeight: 'bold' 
+    },
+    flatListItemDesc: {
+        color: 'black',
+        padding: 10,
+        fontSize: 12, 
+    },
+    flatListItemPrice: {
+        color: 'red',
+        padding: 10,
+        fontSize: 14, 
     }
+
 });
 
 

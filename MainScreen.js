@@ -29,11 +29,11 @@ class MainScreen extends Component {
 const MainScreenTabNavigator = TabNavigator({
 
     Home: {
-        screen: HomeTab
+        screen: BookingTab
     },
 
     Booking: {
-        screen: BookingTab
+        screen: HomeTab
     },
     
     Notification: {

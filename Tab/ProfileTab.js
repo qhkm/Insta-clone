@@ -118,8 +118,8 @@ export default class ProfileTab extends Component {
               </View>
             </View>
             <View style={{ paddingVertical: 10, paddingHorizontal: 10}}> 
-              <Text style={{fontWeight: 'bold'}}>Nama Saya</Text>
-              <Text>Lark | Computer Programmer | Commercial Pilot</Text>
+              <Text style={{fontWeight: 'bold'}}>Qaiyyum Hakimi</Text>
+              <Text>Entrepreneur | Computer Programmer | Philantrophist</Text>
               <Text>www.unsureprogrammer.com</Text>
             </View>
           </View>
@@ -146,9 +146,7 @@ export default class ProfileTab extends Component {
 
             {this.renderSection()}
 
-            <View>
-            
-            </View>
+        
 
           </View>
 
