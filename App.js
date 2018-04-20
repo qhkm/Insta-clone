@@ -6,32 +6,15 @@ import {
   Text,
   View
 } from 'react-native';
-
-import { StackNavigator } from 'react-navigation'
-import MainScreen from './MainScreen'
-
-
+import { AppTab } from './router';
 
 export default class App extends Component {
 
   render() {
     return (
-      <AppStackNavigatorScreen/>
+       <AppTab/>
     );
   }
 }
 
-const AppStackNavigatorScreen = StackNavigator({
-    Main : {
-      screen : MainScreen
-    }
-  })
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-});

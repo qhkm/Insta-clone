@@ -5,7 +5,7 @@ const flatListData = [
         "key": "598a678278fee204ee51cd2c",
         "name": "Package Jepun",   
         "imageUrl": "https://dimg04.c-ctrip.com/images/300v0q000000gge9d42A0_C_500_280.jpg",                    
-        "foodDescription": "Package ini membawakan anda ke jepun",
+        "foodDescription": "Package ini membawakan anda ke jepun bersamaaku asdasdsafdsfdsfdsfdsl;fdskla;fhjdkslafhjkdslafhjklashjfkldhsjakfl",
         "price": "RM2500"
     },
     {

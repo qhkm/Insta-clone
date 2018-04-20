@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {  View, Text, StyleSheet } from 'react-native';
 import {Icon} from 'native-base';
-import BasicFlatList from '../components/BasicFlatList';
+
 
 export default class NotificationTab extends Component {
 
@@ -14,7 +14,11 @@ export default class NotificationTab extends Component {
   render() {
     return (
   
-        <BasicFlatList/>
+       <View>
+       <Text>
+       ayam
+       </Text>
+       </View>
       
     );
   }
