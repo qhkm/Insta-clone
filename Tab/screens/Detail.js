@@ -22,12 +22,17 @@ class Detail extends Component {
         };
       }
 
-      _onPressButton = () => {
-          this.props.navigation.navigate('Calendar');
+      _onPressButton = (params) => {
+       
+          this.props.navigation.navigate('Calendar', {...params});
+
       }
 
-    render() {
-        const { params} = this.props.navigation.state;
+      
+
+      render() {
+
+        const { params } = this.props.navigation.state;
 
         return (
             <ScrollView>
@@ -35,9 +40,8 @@ class Detail extends Component {
                     <Image source={{ uri: params.imageUrl }} style={{width, height:200 }}/>
                     <DetailComp item={params}/>
                     <TouchableHighlight>
-                        <Button raised title='Book Now' onPress={this._onPressButton} buttonStyle={{backgroundColor: 'red'}} />
+                        <Button raised title='Book Now' onPress={() => this._onPressButton(params)} buttonStyle={{backgroundColor: 'red'}} />
                     </TouchableHighlight>
-                   
                 </View>
             </ScrollView>
         );

@@ -5,7 +5,7 @@ import {
     StyleSheet
 } from 'react-native';
 
-import { TabNavigator, StackNavigator } from 'react-navigation'
+import { TabNavigator, StackNavigator, SwitchNavigator } from 'react-navigation'
 import { Icon } from 'native-base'
 
 import HomeTab from './Tab/HomeTab';
@@ -14,6 +14,7 @@ import NotificationTab from './Tab/NotificationTab';
 import ProfileTab from './Tab/ProfileTab';
 import Detail from './Tab/screens/Detail'
 import Calendar from './Tab/screens/Calendar'
+import Login from './Tab/screens/Login/Login'
 
 export const AppStack = StackNavigator({
     BookingTab: {
@@ -70,4 +71,22 @@ export const AppTab = TabNavigator({
     }
 })
 
+export const AppEntry = SwitchNavigator({
+    Login : {
+        screen: Login,
+        navigationOptions : {
+            header: null
+        }
+    },
 
+    AppTab : {
+        screen : AppTab
+    }
+})
+
+// Login : {
+//         screen : Login,
+//         navigationOptions : {
+//             header : null
+//         }
+//     },

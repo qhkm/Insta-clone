@@ -1,3 +1,4 @@
+
 //import liraries
 import React, { Component } from 'react';
 import { ScrollView, View, Text, StyleSheet, TouchableHighlight } from 'react-native';
@@ -11,8 +12,37 @@ export default class CalendarsScreen extends Component {
       this.state = {};
       this.onDayPress = this.onDayPress.bind(this);
     }
-  
+
+    postPackage = (params) => {
+      fetch('http://localhost:3000/api/v1/companies', {
+        method: 'POST',
+        headers: {
+          'Accept' : 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+        name : params.name,
+        reservation_date : this.state.selected,
+        number_of_pax : this.state.displayValue,
+
+
+        })
+      })
+      .then((response) => response.text())
+        .then((responseText) => {
+          alert("Your booking has been confirmed");
+          this.props.navigation.navigate('BookingTab')
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    }
+
+
     render() {
+
+      const { params } = this.props.navigation.state;
+
       return (
        <View style={{flex: 1}}>
        
@@ -30,42 +60,26 @@ export default class CalendarsScreen extends Component {
         //Stepper
         <View style={{flex: 1,flexDirection:'row'}}>
           <View style={{flex: 1 ,alignItems: 'flex-start'}}>
-            <Text>Adult</Text>
+            <Text>Adult {this.state.displayValue}</Text>
           </View>
           <View style={{flex: 1 ,alignItems: 'flex-end'}}>
             <SimpleStepper valueChanged={(value) => this.valueChanged(value)}/>
           </View>
-        </View>
-
-        <View style={{flex: 1,flexDirection:'row'}}>
-          <View style={{flex: 1 ,alignItems: 'flex-start'}}>
-            <Text>Adult</Text>
-          </View>
-          <View style={{flex: 1 ,alignItems: 'flex-end'}}>
-            <SimpleStepper valueChanged={(value) => this.valueChanged(value)}/>
-          </View>
-        </View>
-
-        
-
-        <TouchableHighlight onPress={()=> alert('test')}>
-          <View style={styles.buttonStyle}>
-            <Text>PROCEED</Text>  
-          </View>
-        </TouchableHighlight>
-
 
         </View>
-        
-       
-
-        
+          <TouchableHighlight onPress={() => this.postPackage(params)}>
+            <View style={styles.buttonStyle}>
+            <Text>PROCEED</Text> 
+            <Text></Text>
+            </View>
+          </TouchableHighlight>
+        </View>
       );
     }
 
     valueChanged(value) {
       // If you want to set the value to a certain decimal point you can like so:
-      const displayValue = value.toFixed(2)
+      const displayValue = value.toFixed(0)
       this.setState({
          displayValue: displayValue
       })

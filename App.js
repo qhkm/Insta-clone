@@ -6,13 +6,13 @@ import {
   Text,
   View
 } from 'react-native';
-import { AppTab } from './router';
+import { AppEntry } from './router';
 
 export default class App extends Component {
 
   render() {
     return (
-       <AppTab/>
+       <AppEntry/>
     );
   }
 }
